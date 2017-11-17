@@ -19,7 +19,6 @@ gulp.task('styles', function() {
   return gulp.src('./app/assets/styles/styles.css')
     .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
     .pipe(gulp.dest('./app/temp/styles'));
-    console.log("Gulp task styles ran successfully!");
 });
 
 gulp.task('watch', function() {
