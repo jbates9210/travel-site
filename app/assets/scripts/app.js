@@ -1,7 +1,10 @@
-var Person = require('./modules/person');
+var $ = require('jquery');
+var Person = require('./modules/Person');
+
+alert('testing 123');
 
 var john = new Person("John Doe", "blue");
-var jane = new Person("Jane Smith", "green");
-
 john.greet();
+
+var jane = new Person("Jane Smith", "green");
 jane.greet();
