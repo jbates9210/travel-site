@@ -1,11 +1,14 @@
-function Person(fullName, favColor) {
-  this.name = fullName;
-  this.favColor = favColor
-	this.greet = function() {
-		console.log("Hello, my name is " + this.name + " and my favorite color is "
+class Person {
+  constructor(fullName, favColor) {
+    this.name = fullName;
+    this.favColor = favColor
+  }
+
+	greet() {
+		console.log("Hi, my name is " + this.name + " and my favorite color is "
     + this.favColor + ".");
 	}
 }
 
 
-module.exports = Person;
+export default Person;
